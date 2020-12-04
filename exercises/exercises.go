@@ -2,6 +2,7 @@ package main
 
 import "fmt"
 
+// sayı dizisinden tek sayıları ve çift sayıları ayırma
 func main() {
 
 	numbers := []int{2, 3, 4, 12, 11, 2, 3, 5, 12, 2}
