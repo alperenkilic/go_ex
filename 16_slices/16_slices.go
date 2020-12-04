@@ -35,7 +35,7 @@ func main() {
 	fmt.Println(mySlice5)
 	fmt.Println()
 	//eleman silme
-	mySlice5 = mySlice5[2:len(mySlice5)]
+	mySlice5 = mySlice5[2:]
 	fmt.Println(mySlice5)
 
 	mySlice5 = mySlice5[:len(mySlice5)-2]
