@@ -1,5 +1,7 @@
 package main
 
+import "fmt"
+
 /* func main() {
 	for x := 0; x <= 10; x++ {
 		if x%2 == 0 {
@@ -19,21 +21,23 @@ package main
 	fmt.Println(x, " tektir")
 } */
 
-/* func main() {  // bu kod neden çalışmıyor ??s
+func main() { // bu kod neden çalışmıyor ??s
 	var x int
 	var y int
-	for x = 0; x < 9; x++ {
-		for y = 1; y < x-1; y++ {
+	for x = 0; x < 20; x++ {
+		for y = 2; y < x-1; y++ {
 			if x%y == 0 {
 				fmt.Println(x, "asal değil")
 			}
+			break
 		}
 	}
 
-} */
+}
 
-/* func main() {          ///////////// asal hesaplar.
-	var counter int
+//var counter int
+
+/* func main() { ///////////// asal hesaplar.
 	for i := 2; i < 20; i++ {
 		for y := 2; y < i; y++ {
 			if i%y == 0 {
@@ -41,7 +45,7 @@ package main
 			}
 		}
 		if counter == 0 {
-			fmt.Println(i, " asaldır")
+			fmt.Println(i, "asldır")
 		}
 		counter = 0
 	}
