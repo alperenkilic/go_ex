@@ -1,6 +1,8 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+)
 
 // sayı dizisinden tek sayıları ve çift sayıları ayırma
 func main() {
