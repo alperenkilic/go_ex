@@ -1,6 +1,6 @@
 {
     "go.toolsEnvVars": {
         "GOROOT": "/Users/alperen/Library/Caches/tinygo/goroot-go1.15.6-ad459878e45508f14c67ecb8b8fb07737d0d31247ab9a4bd1219de2d9744f959-syscall",
-        "GOFLAGS": "-tags=arduino_nano,atmega328p,atmega,avr5,avr,baremetal,linux,arm,tinygo,gc.conservative,scheduler.none"
+        "GOFLAGS": "-tags=clue_alpha,nrf52840_reset_uf2,softdevice,s140v6,nrf52840,nrf,cortexm,baremetal,linux,arm,tinygo,gc.conservative,scheduler.tasks"
     }
 }
