@@ -32,8 +32,15 @@ type easytest struct {
 	skills    []string
 }
 
-func main() {
+func yeniMühendis(ad string, yaş int) *employee {
+	eklenen := new(employee)
+	eklenen.name = ad
+	eklenen.age = yaş
+	return eklenen
+}
 
+func main() {
+	fmt.Println(yeniMühendis("alperen", 22))
 	var e1 employee
 	e1.name = "alperen"
 	e1.age = 22
