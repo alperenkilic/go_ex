@@ -1,4 +1,5 @@
 // goroutine anlamak için daha basit bir örnek
+// concurency is not paralellism :)
 package main
 
 import (
@@ -13,7 +14,7 @@ func main() {
 	go countSurname("kılıç")
 	//fmt.Scanln() // --> scanln sonsuza kadar değer topladığı için sonuçlar yazdırılır
 	// scanln olmazsa değerler yazdırılmaz.
-	time.Sleep(time.Second * 4) // 4 saniye boyunca çalışır.
+	time.Sleep(time.Second * 7) // 4 saniye boyunca çalışır.
 }
 
 func countName(name string) {

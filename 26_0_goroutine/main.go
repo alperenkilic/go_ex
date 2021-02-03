@@ -16,7 +16,8 @@ func main() {
 	go func() {
 		fmt.Println("Merhaba isimsiz dünya")
 	}()
-	fmt.Scanln() // --> bu scanln neyi yakalıyor ?
+	//time.Sleep(time.Second * 5)
+	fmt.Scanln() // --> bu scanln neyi yakalıyor ? **= main goroutune'in bitmesini önlüyor, time.sleep ile de yapılabilir.
 
 }
 
