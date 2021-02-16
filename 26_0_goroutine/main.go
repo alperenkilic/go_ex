@@ -18,6 +18,7 @@ func main() {
 	}()
 	//time.Sleep(time.Second * 5)
 	fmt.Scanln() // --> bu scanln neyi yakalıyor ? **= main goroutune'in bitmesini önlüyor, time.sleep ile de yapılabilir.
+	// en alta bak, daha mantıklı bir yöntem var....
 
 }
 
@@ -42,3 +43,16 @@ func bulucuB(dizi []string) {
 func hello() {
 	fmt.Println("hello fırladım")
 }
+
+/// mantıklı yöntem
+/*
+func main() {
+    doneChan := make(chan string)
+    go func() {
+        //yapılacak işlemler vs...
+        doneChan <- "İşim bitti"  //-- işlemler bitince chanele  veri atar
+    }()
+
+    <-doneChan // İşim bitti diyene kadar çalış!
+}
+*/

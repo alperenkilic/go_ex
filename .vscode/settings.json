@@ -1,7 +1,0 @@
-{
-    "go.toolsEnvVars": {
-        "GOROOT": "/usr/local/Cellar/go/1.15.6/libexec",
-        "GOFLAGS": "-tags=clue_alpha,nrf52840_reset_uf2,softdevice,s140v6,nrf52840,nrf,cortexm,baremetal,linux,arm,tinygo,gc.conservative,scheduler.tasks"
-    }
-}
-
