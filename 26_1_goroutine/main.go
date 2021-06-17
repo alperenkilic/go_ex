@@ -14,7 +14,7 @@ func main() {
 	go countSurname("kılıç")
 	//fmt.Scanln() // --> scanln sonsuza kadar değer topladığı için sonuçlar yazdırılır
 	// scanln olmazsa değerler yazdırılmaz.
-	time.Sleep(time.Second * 7) // 4 saniye boyunca çalışır.
+	time.Sleep(time.Second * 7) // %d saniye boyunca çalışır.
 }
 
 func countName(name string) {
