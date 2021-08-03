@@ -24,6 +24,12 @@ func squareSum(from, to int, ch chan int) {
 	ch <- result
 }
 
+/*
+A select statement blocks until at least one of its cases can proceed.
+The default case is useful in preventing deadlocks -- without it the
+select would wait for a channel forever, crashing the program if none
+of the channels received data.
+*/
 func main() {
 	evenCh := make(chan int)
 	sqCh := make(chan int)
