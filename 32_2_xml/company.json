@@ -1,0 +1,50 @@
+[
+    {
+        "FirstName": "Jane",
+        "LastName": "Doe",
+        "Title": "Engineer",
+        "Division": "Materials",
+        "Building": 327,
+        "Room": "19"
+    },
+    {
+        "FirstName": "William",
+        "LastName": "Defe",
+        "Title": "Account",
+        "Division": "Accts Payable",
+        "Building": 326,
+        "Room": "14a"
+    },
+    {
+        "FirstName": "Jack",
+        "LastName": "Dee",
+        "Title": "Engineer",
+        "Division": "Materials",
+        "Building": 327,
+        "Room": "21"
+    },
+    {
+        "FirstName": "Sandra",
+        "LastName": "Rog",
+        "Title": "Engineer",
+        "Division": "Materials",
+        "Building": 327,
+        "Room": "22"
+    },
+    {
+        "FirstName": "Steve",
+        "LastName": "Cas",
+        "Title": "Engineer",
+        "Division": "Materials",
+        "Building": 327,
+        "Room": "24"
+    },
+    {
+        "FirstName": "Michelle",
+        "LastName": "Mich",
+        "Title": "COO",
+        "Division": "Management",
+        "Building": 216,
+        "Room": "264"
+    }
+]
