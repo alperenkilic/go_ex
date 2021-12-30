@@ -1,57 +1,34 @@
 package main
 
-import (
-	"fmt"
-	"math"
-)
+import "fmt"
 
-type rectangle struct {
-	a, b float64
+type kare struct {
+	a, b int
 }
 
-func (dikt rectangle) area() float64 {
-	return dikt.a * dikt.b
+type çember struct {
+	r int
 }
 
-func (dikt rectangle) circumference() float64 {
-	return 2 * (dikt.a + dikt.b)
+func (k kare) çevre() int {
+	return (k.a + k.b) * 2
 }
 
-type shape interface { // interface SADECE yapılacak fonksiyonları belirtir (signature)
-	area() float64
-	circumference() float64
+func (ç çember) çevre() int {
+	return 2 * 3 * ç.r
 }
 
-type circle struct {
-	r float64
+type şekil interface {
+	çevre() int
 }
 
-func (daire circle) area() float64 {
-	return math.Pi * (daire.r * daire.r)
-}
-
-func (daire circle) circumference() float64 {
-	return 2 * math.Pi * daire.r
-}
-
-func interfaceFunc(i shape) {
-	fmt.Println(i)
-	fmt.Println(i.area())
-	fmt.Println(i.circumference())
-	fmt.Printf("%T", i)
-	fmt.Println()
+func interfaceFunc(ş şekil) int {
+	return ş.çevre()
 }
 
 func main() {
-	/* 	r1 := rectangle{3, 4}
-	   	fmt.Println(r1.area())
-	   	fmt.Println(r1.circumference())
-	   	fmt.Println()
-	   	interfaceFunc(r1) */
-
-	cember := circle{5}
-	interfaceFunc(cember) // circle'ın area-circumfence fonksiyonlarını getirir
-	fmt.Println()
-	r1 := rectangle{3, 4}
-	interfaceFunc(r1) // rectangle'ın area-circumfence fonksiyonlarını getirir
+	k := kare{a: 3, b: 4}
+	ç := çember{r: 5}
+	fmt.Println(interfaceFunc(k))
+	fmt.Println(interfaceFunc(ç))
 }
